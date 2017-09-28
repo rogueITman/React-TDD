@@ -12,18 +12,18 @@ npm install react-dom react-test-renderer --save-dev
 npm install enzyme-adapter-react-16 --save-dev  
 
 ---------------------------------------------------------------------
-//WORKING TEST SETUP
-import React from "react";
-import App from './App';
-import { configure, shallow, mount, render } from "enzyme";
-import Adapter from 'enzyme-adapter-react-16';
-
-configure({ adapter: new Adapter() });
-
-const app = shallow(<App />);
-
-it('renders correctly', () => {
-  expect(app).toMatchSnapshot();
-});
+//WORKING TEST SETUP  
+import React from "react";  
+import App from './App';  
+import { configure, shallow, mount, render } from "enzyme";  
+import Adapter from 'enzyme-adapter-react-16';  
+  
+configure({ adapter: new Adapter() });  
+  
+const app = shallow(<App />);  
+  
+it('renders correctly', () => {  
+  expect(app).toMatchSnapshot();  
+});  
 ------------------------------------------------------------------------------
 
