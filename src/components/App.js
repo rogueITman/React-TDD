@@ -24,8 +24,8 @@ class App extends Component {
         <h2>Gift Giver</h2>
         <div className="gift-list">
           {
-            this.state.gifts.map( (gift, index) => {
-              return (<div key={index}></div>);
+            this.state.gifts.map( gift => {
+              return (<div key={gift.id}></div>);
             })
           }
         </div>
