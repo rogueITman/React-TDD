@@ -10,6 +10,7 @@ rm -rf node_modules
 npm install  
 npm install react-dom react-test-renderer --save-dev  
 npm install enzyme-adapter-react-16 --save-dev  
+npm run test -- --coverage  
 
 ---------------------------------------------------------------------
 //WORKING TEST SETUP  
